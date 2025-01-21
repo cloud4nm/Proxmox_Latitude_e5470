@@ -2,7 +2,7 @@
 
 This guide explains how to set up an old laptop (in this case, a Dell Latitude e5470) as a Proxmox server, keeping the 
 laptop lid closed, screen off, and checking the battery status. 
-The assumption is that you have already installed Proxmox and it's up and running.
+The assumption is that you have already installed Proxmox on your spare laptop and it's up and running.
 
 ---
 
@@ -86,17 +86,17 @@ Proxmox doesn't provide a direct GUI method for checking the laptop's battery pe
 
 1. Update the package list:
     ```bash
-    apt update
+    root@lab:~# apt update
     ```
 
 2. Install `upower` utility:
     ```bash
-    apt install upower -y
+    root@lab:~# apt install upower -y
     ```
 
 3. Run the following command to list battery information:
     ```bash
-    upower -i $(upower -e | grep BAT)
+    root@lab:~# upower -i $(upower -e | grep BAT)
     ```
 
 4. Interpret the output. Look for the `percentage` field:
@@ -114,12 +114,12 @@ Proxmox doesn't provide a direct GUI method for checking the laptop's battery pe
 
 1. Install `acpi` utility:
     ```bash
-    apt install acpi
+    root@lab:~# apt install acpi
     ```
 
 2. Run the following command to view battery status:
     ```bash
-    acpi -i
+    root@lab:~# acpi -i
     ```
 
 3. Review the output. It will look something like:
