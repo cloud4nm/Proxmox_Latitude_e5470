@@ -138,4 +138,3 @@ Proxmox doesn't provide a direct GUI method for checking the laptop's battery pe
 
 With these simple tweaks, you've turned an old laptop into a Proxmox server that works efficiently with the lid closed and the screen off. It's a neat, space-saving setup perfect for your homelab! 🚀
 
-```
