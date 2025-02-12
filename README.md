@@ -1,3 +1,5 @@
+<head><meta name="google-site-verification" content="Lcaebr_i9vD5WPWGB3XNQgkJXRunzkb7TzXL8pjG6S4" /></head>
+
 # Setting Up an Old Laptop for Proxmox with Lid Closed, Screen Off & Battery Status
 
 This guide explains how to set up an old laptop (in this case, a Dell Latitude e5470) as a Proxmox server, keeping the 
